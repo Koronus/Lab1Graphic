@@ -15,7 +15,8 @@ class DrawingPanel extends JPanel {
     private String algorithm;
 
     private int lineX1 = 10, lineY1 = 10;
-    private int lineX2 = 40, lineY2 = 30;
+    private int lineX2 = 30, lineY2 = 30;
+
     private Random random = new Random();
 
 
@@ -123,6 +124,7 @@ class DrawingPanel extends JPanel {
         bresenhamLine(lineX1, lineY1, lineX2, lineY2);
         addPixel(lineX1, lineY1, Color.GREEN);
         addPixel(lineX2, lineY2, Color.RED);
+        System.out.println(lineX1+","+lineX1+" -> "+lineX2+","+lineY2);
     }
 
     private void ddaLine(double x1, double y1, double x2, double y2) {
